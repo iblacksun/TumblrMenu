@@ -47,25 +47,25 @@
 - (void)showMenu
 {
     CHTumblrMenuView *menuView = [[CHTumblrMenuView alloc] init];
-    [menuView addMenuItemWithTitle:@"Text" andIcon:[UIImage imageNamed:@"post_type_bubble_text.png"] andSelectedBlock:^{
+    [menuView addMenuItemWithTitle:@"新浪微博" andIcon:[UIImage imageNamed:@"ShareIcon01"] andSelectedBlock:^{
         NSLog(@"Text selected");
     }];
-    [menuView addMenuItemWithTitle:@"Photo" andIcon:[UIImage imageNamed:@"post_type_bubble_photo.png"] andSelectedBlock:^{
+    [menuView addMenuItemWithTitle:@"腾讯微博" andIcon:[UIImage imageNamed:@"ShareIcon02"] andSelectedBlock:^{
         NSLog(@"Photo selected");
     }];
-    [menuView addMenuItemWithTitle:@"Quote" andIcon:[UIImage imageNamed:@"post_type_bubble_quote.png"] andSelectedBlock:^{
+    [menuView addMenuItemWithTitle:@"QQ空间" andIcon:[UIImage imageNamed:@"ShareIcon03"] andSelectedBlock:^{
         NSLog(@"Quote selected");
 
     }];
-    [menuView addMenuItemWithTitle:@"Link" andIcon:[UIImage imageNamed:@"post_type_bubble_link.png"] andSelectedBlock:^{
+    [menuView addMenuItemWithTitle:@"微信好友" andIcon:[UIImage imageNamed:@"ShareIcon04"] andSelectedBlock:^{
         NSLog(@"Link selected");
 
     }];
-    [menuView addMenuItemWithTitle:@"Chat" andIcon:[UIImage imageNamed:@"post_type_bubble_chat.png"] andSelectedBlock:^{
+    [menuView addMenuItemWithTitle:@"朋友圈" andIcon:[UIImage imageNamed:@"ShareIcon05"] andSelectedBlock:^{
         NSLog(@"Chat selected");
 
     }];
-    [menuView addMenuItemWithTitle:@"Video" andIcon:[UIImage imageNamed:@"post_type_bubble_video.png"] andSelectedBlock:^{
+    [menuView addMenuItemWithTitle:@"Q Q" andIcon:[UIImage imageNamed:@"ShareIcon06"] andSelectedBlock:^{
         NSLog(@"Video selected");
 
     }];

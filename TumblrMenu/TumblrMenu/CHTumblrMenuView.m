@@ -25,10 +25,10 @@
 
 #import "CHTumblrMenuView.h"
 #define CHTumblrMenuViewTag 1999
-#define CHTumblrMenuViewImageHeight 90
-#define CHTumblrMenuViewTitleHeight 20
-#define CHTumblrMenuViewVerticalPadding 10
-#define CHTumblrMenuViewHorizontalMargin 10
+#define CHTumblrMenuViewImageHeight 75
+#define CHTumblrMenuViewTitleHeight 30
+#define CHTumblrMenuViewVerticalPadding 15
+#define CHTumblrMenuViewHorizontalMargin 25
 #define CHTumblrMenuViewRriseAnimationID @"CHTumblrMenuViewRriseAnimationID"
 #define CHTumblrMenuViewDismissAnimationID @"CHTumblrMenuViewDismissAnimationID"
 #define CHTumblrMenuViewAnimationTime 0.36
@@ -57,7 +57,8 @@
         titleLabel_.backgroundColor = [UIColor clearColor];
         titleLabel_.textColor = [UIColor whiteColor];
         titleLabel_.text = title;
-        _selectedBlock = block;
+        titleLabel_.font = [UIFont systemFontOfSize:12];
+        self.selectedBlock = block;
         [self addSubview:iconView_];
         [self addSubview:titleLabel_];
     }
